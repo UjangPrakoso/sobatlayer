@@ -510,6 +510,11 @@ a {
   .testimony-card p {
     font-size: 0.82rem;
   }
+  .faq-buttontext,
+  .faq-buttontext2,
+  .faq-popup p {
+    font-size: 0.98rem;
+  }
   .about {
     padding: 2rem 0;
   }
