@@ -1,10 +1,21 @@
-:root {
+/* :root {
   --green: #07552e;
   --green-dark: #034322;
   --green-bright: #078c42;
   --gold: #f5ad35;
   --text: #173b2a;
   --muted: #52675b;
+  --light: #f7f9f7;
+  --white: #fff;
+  --shadow: 0 5px 18px rgb(0 0 0 / 12%);
+} */
+:root {
+  --green: #d4960e;
+  --green-dark: #433203;
+  --green-bright: #ffa90a;
+  --gold: #f5ad35;
+  --text: #3b3017;
+  --muted: #675f52;
   --light: #f7f9f7;
   --white: #fff;
   --shadow: 0 5px 18px rgb(0 0 0 / 12%);
@@ -110,7 +121,7 @@ a {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--white);
-  background: var(--green-dark);
+  background: var(--green-bright);
 }
 .menu-toggle {
   display: none;
@@ -202,13 +213,13 @@ a {
 .feature-card h2 {
   margin: 0 0 0.35rem;
   color: var(--green-dark);
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.35;
 }
 .feature-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.83rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -306,9 +317,15 @@ a {
 .faq-toggle {
   text-align: center;
   padding: 0.25rem;
-  background: var(--green-dark);
+  background: var(--green-bright);
   border-radius: 10px;
   box-shadow: var(--shadow);
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.faq-toggle:hover {
+  background: var(--green);
 }
 /* .faq-cardflex {
   width: minmax(0, 1fr);
@@ -504,7 +521,7 @@ a {
   .testimony-card {
     padding: 0.55rem 0.3rem;
   }
-  .testimony-card h2 {
+  .testimony-card h3 {
     font-size: 0.98rem;
   }
   .testimony-card p {
