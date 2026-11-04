@@ -456,6 +456,12 @@ a {
   }
 }
 @media (max-width: 760px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
   .container {
     width: min(100% - 2rem, 600px);
   }
@@ -504,10 +510,10 @@ a {
     padding: 0.55rem 0.3rem;
   }
   .feature-card h2 {
-    font-size: 0.98rem;
+    font-size: 1.1rem;
   }
   .feature-card p {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
   }
   .testimony {
     margin-top: -3.5rem;
